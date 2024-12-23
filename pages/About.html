@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About TrustCare</title>
     <link rel="stylesheet" href="../css/aboutStyle.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -16,9 +17,9 @@
             <a href="../index.html">home</a>
             <a href="#about">about</a>
             <a href="../pages/services.html">services</a>
-            <a href="../doctors.php">doctors</a>
+            <a href="../doctor.php">doctors</a>
             <a href="../appoinment.php">appointment</a>
-            <a href="../signup/">review</a>
+            <a href="../signup.php">review</a>
             <a href="../pages/blogs.html">blogs</a>
         </nav>
     
@@ -161,6 +162,14 @@
         <p>&copy; 2024 <span>TrustCare Hospital</span> | All rights reserved.</p></div>
     
     </footer>
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
+
+    menuButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+    </script>
 
 
 

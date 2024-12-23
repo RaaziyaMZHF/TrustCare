@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <link rel="stylesheet" href="../css/blog1.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
     <header class="header">
 
-        <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> <strong>WC</strong>medical </a>
+        <a href="#" class="logo"> <img src="../images/logo.png" alt=""> <strong>Trust</strong>care </a>
     
         <nav class="navbar">
             <a href="../index.html">home</a>
-            <a href="./pages/About.html">about</a>
-            <a href="#services">services</a>
-            <a href="#doctors">doctors</a>
-            <a href="#appointment">appointment</a>
-            <a href="../index.html/#review">review</a>
+            <a href="../pages/About.html">about</a>
+            <a href="../pages/Services.html">services</a>
+            <a href="../doctor.php">doctors</a>
+            <a href="../appoinment.php">appointment</a>
+            <a href="../index.html">review</a>
             <a href="../pages/blogs.html">blogs</a>
         </nav>
     
@@ -114,6 +115,14 @@
         <p>&copy; 2024 <span>TrustCare Hospital</span> | All rights reserved.</p></div>
     
     </footer>
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+    const navbar = document.querySelector('.navbar');
+
+    menuButton.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+    </script>
     
 </body>
 </html>
